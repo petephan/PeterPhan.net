@@ -1,0 +1,96 @@
+/*
+ * Site-specific additions loaded AFTER resume.min.css.
+ * Kept separate from the compiled theme so rebuilding the theme never erases them.
+ * Sections: 1) colour/contrast  2) focus + skip link  3) lists  4) buttons
+ *           5) motion  6) print
+ */
+
+/* 1) Colour / contrast (WCAG AA = 4.5:1 for normal text) ------------------ */
+/* body text: #868e96 was 3.3:1 on white -> #5a6268 is 6.2:1 */
+body { color: #5a6268; }
+
+/* brand orange: #BD5D38 was 4.39:1 -> #B0532F is 5.09:1 (text on white, white on orange) */
+.bg-primary { background-color: #B0532F !important; }
+.text-primary { color: #B0532F !important; }
+a { color: #B0532F; }
+a:hover, a:focus, a:active { color: #824027; }
+.social-icons a:hover { background-color: #B0532F; }
+.dev-icons .list-inline-item i:hover { color: #B0532F; }
+
+/* links inside sentences/lists must not rely on colour alone */
+main p a:not(.btn), main li a:not(.btn) { text-decoration: underline; }
+
+/* menu links: Bootstrap's 50% white was 2.2:1 on orange -> near-solid white */
+#sideNav .navbar-nav .nav-item .nav-link { color: rgba(255, 255, 255, 0.95); }
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link:focus,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
+}
+
+/* 2) Keyboard focus + skip link ------------------------------------------ */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #343a40;
+  outline-offset: 3px;
+}
+#sideNav a:focus-visible, #sideNav button:focus-visible {
+  outline-color: #fff;
+}
+main:focus { outline: none; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  color: #343a40;
+  font-weight: 700;
+  border: 2px solid #343a40;
+}
+.skip-link:focus { left: 1rem; top: 1rem; color: #343a40; }
+
+/* 3) Real bullet lists (replace typed "•" characters) -------------------- */
+.resume-bullets { padding-left: 1.25rem; margin-bottom: 0; }
+.resume-bullets li { margin-bottom: 1rem; padding-left: 0.25rem; }
+.resume-bullets li:last-child { margin-bottom: 0; }
+
+/* 4) Buttons: Bootstrap default blue -> brand orange --------------------- */
+.btn-primary { background-color: #B0532F; border-color: #B0532F; color: #fff; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #824027; border-color: #824027; color: #fff;
+}
+.btn-outline-primary { color: #B0532F; border-color: #B0532F; }
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: #B0532F; border-color: #B0532F; color: #fff;
+}
+
+/* 5) Respect "reduce motion" ---------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  * { transition: none !important; animation: none !important; }
+}
+
+/* 6) Print: a clean one-column resume ------------------------------------ */
+@media print {
+  body { padding: 0 !important; color: #000; }
+  #sideNav, .skip-link, .social-icons, .btn { display: none !important; }
+  section.resume-section {
+    min-height: 0 !important;
+    padding: 1rem 0 !important;
+    max-width: none;
+  }
+  .resume-item { page-break-inside: avoid; }
+  h1, h2, h3 { page-break-after: avoid; }
+  img { max-width: 100%; page-break-inside: avoid; }
+  a { color: #000; text-decoration: underline; }
+  #portfolio a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    word-break: break-all;
+  }
+  hr { display: none; }
+}

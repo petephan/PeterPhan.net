@@ -9,6 +9,64 @@
   <meta name="author" content="">
 
   <title>Peter Phan Portfolio</title>
+  <meta name="theme-color" content="#B0532F">
+  <link rel="canonical" href="https://www.peterphan.net/">
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Link previews (LinkedIn, Slack, iMessage, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Peter Phan">
+  <meta property="og:title" content="Peter Phan | Project Manager Portfolio">
+  <meta property="og:description" content="Project manager with MarTech and data analysis experience. Resume, projects, skills and certifications.">
+  <meta property="og:url" content="https://www.peterphan.net/">
+  <meta property="og:image" content="https://www.peterphan.net/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Peter Phan, Project Manager. MarTech and Data Analysis portfolio.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Peter Phan | Project Manager Portfolio">
+  <meta name="twitter:description" content="Project manager with MarTech and data analysis experience. Resume, projects, skills and certifications.">
+  <meta name="twitter:image" content="https://www.peterphan.net/img/og-image.png">
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Peter Phan",
+  "jobTitle": "Project Manager",
+  "description": "Peter Phan: project manager with MarTech and data analysis experience. Resume, projects and certifications.",
+  "url": "https://www.peterphan.net/",
+  "image": "https://www.peterphan.net/img/profile.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mountain View",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "San Jose State University"
+  },
+  "knowsAbout": [
+    "Project management",
+    "Marketing technology",
+    "Generative AI adoption",
+    "Data analysis",
+    "Agile and Scrum",
+    "Tableau",
+    "SQL"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/peterphan/",
+    "https://github.com/petephan"
+  ]
+}
+  </script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,15 +78,18 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Peter Phan, back to top">
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.png" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" width="480" height="487" alt="">
       </span>
     </a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,6 +104,9 @@
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
@@ -55,7 +119,7 @@
     </div>
   </nav>
 
-  <div class="container-fluid p-0">
+  <main class="container-fluid p-0" id="main" tabindex="-1">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100 text-center text-lg-left">
@@ -66,14 +130,14 @@
           <a href="mailto:peterphansj@gmail.com">peterphansj@gmail.com</a>
         </div>
         <!-- Profile photo: shown here only on small screens (on large screens it is in the sidebar) -->
-        <img class="d-block d-lg-none mx-auto img-fluid rounded-circle shadow-sm mb-4" style="max-width: 10rem;" src="img/profile2.png" alt="Peter Phan">
-        <p class="lead mb-5">Project Manager | MarTech/Tech Stack Portfolio | Data Analysis |</p>
+        <img class="d-block d-lg-none mx-auto img-fluid rounded-circle shadow-sm mb-4" style="max-width: 10rem;" src="img/profile.jpg" width="480" height="487" alt="Peter Phan">
+        <p class="lead mb-5">Project Manager | MarTech/Tech Stack Portfolio | Data Analysis</p>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/peterphan/">
-            <i class="fab fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/in/peterphan/" aria-label="Peter Phan on LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
           </a>
-          <a href="https://github.com/petephan">
-            <i class="fab fa-github"></i>
+          <a href="https://github.com/petephan" aria-label="Peter Phan on GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -89,14 +153,16 @@
           <div class="resume-content">
             <h3 class="mb-0">Project Manager</h3>
             <div class="subheading mb-3">Cisco</div>
-            <p>•	AI Project Management &amp; Innovation: Served as the first-line evaluator for internal Gen AI proposals from teams across the organization, running kickoff meetings and assessing each use case for business value, technical fit, and cost before it advanced to the next stage.</p>
-            <p>•	Built the approval path and cross-functional review process for Gen AI adoption, coordinating technical, Privacy, Legal, and executive stakeholders and requiring every proposal to show a cost plan, measurable outcomes, KPIs, and projected time savings.</p>
-            <p>•	Screened out proposals that did not justify Gen AI, rejecting those with a simpler non-AI solution, unacceptable PII exposure, or overlap with existing tools and features. This protected the organization from privacy risk and redundant spend, and gave teams clear criteria for future submissions.</p>
-            <p>•	Led business-side execution of the Cisco.com Search migration to Elasticsearch with integrated Generative AI features, coordinating directly with engineering on requirements, testing milestones, and launch readiness.</p>
-            <p>•	Martech License &amp; Financial Management: Lead the team managing end to end the vendor license contracts and budget forecasting, centralizing contract data, renewal timelines, and cross-charge processes in Airtable to ensure financial accuracy, compliance, and continuous process improvement.</p>
-            <p>•	Portfolio &amp; Operational Orchestration: Managed the MarTech portfolio in Jira and Asana, running intake, backlog grooming, orchestrating QBR operations and the MarTech Forum to keep cross-team work on schedule, facilitate stakeholder alignment, and drive platform rationalization.</p>
-            <p>•	Maintained KPI dashboards and reports in Tableau, Looker Studio, and Domo to track project performance and surface delivery risks early.</p>
-            <p>•	Earned the North Star Navigator Award (Oct 2022) for hands-on execution of the Cisco.com Reimagined migration from legacy on-prem AEM to cloud-based AEM 6.5.</p>
+            <ul class="resume-bullets">
+              <li>AI Project Management &amp; Innovation: Served as the first-line evaluator for internal Gen AI proposals from teams across the organization, running kickoff meetings and assessing each use case for business value, technical fit, and cost before it advanced to the next stage.</li>
+              <li>Built the approval path and cross-functional review process for Gen AI adoption, coordinating technical, Privacy, Legal, and executive stakeholders and requiring every proposal to show a cost plan, measurable outcomes, KPIs, and projected time savings.</li>
+              <li>Screened out proposals that did not justify Gen AI, rejecting those with a simpler non-AI solution, unacceptable PII exposure, or overlap with existing tools and features. This protected the organization from privacy risk and redundant spend, and gave teams clear criteria for future submissions.</li>
+              <li>Led business-side execution of the Cisco.com Search migration to Elasticsearch with integrated Generative AI features, coordinating directly with engineering on requirements, testing milestones, and launch readiness.</li>
+              <li>Martech License &amp; Financial Management: Led the team managing end to end the vendor license contracts and budget forecasting, centralizing contract data, renewal timelines, and cross-charge processes in Airtable to ensure financial accuracy, compliance, and continuous process improvement.</li>
+              <li>Portfolio &amp; Operational Orchestration: Managed the MarTech portfolio in Jira and Asana, running intake, backlog grooming, orchestrating QBR operations and the MarTech Forum to keep cross-team work on schedule, facilitate stakeholder alignment, and drive platform rationalization.</li>
+              <li>Maintained KPI dashboards and reports in Tableau, Looker Studio, and Domo to track project performance and surface delivery risks early.</li>
+              <li>Earned the North Star Navigator Award (Oct 2022) for hands-on execution of the Cisco.com Reimagined migration from legacy on-prem AEM to cloud-based AEM 6.5.</li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">October 2019 - July 2026</span>
@@ -107,10 +173,11 @@
           <div class="resume-content">
             <h3 class="mb-0">Associate Product Manager/Business Analyst</h3>
             <div class="subheading mb-3">ComplianceEase</div>
-            <p>•	Analyzed and helped prioritize implementation of HELOC license support that resulted in reduction of Engg/QA effort by more than 50%. The implementation resulted in a 54% usage rate and 66% revenue increase in the product</p>
-            <p>•	Owner and designer of Profile ID, a feature catered to resellers and regulators, adding the ability to customize settings on the fly and increase data submission accury on a per loan/audit basis</p>
-            <p>•	Gathering requirements, writing user stories, maintaining backlog, scheduling, bug triage in JIRA</p>
-            <p>•	Certified ScrumMaster (CSM) – March 2016</p>
+            <ul class="resume-bullets">
+              <li>Analyzed and helped prioritize implementation of HELOC license support that resulted in reduction of Engineering/QA effort by more than 50%. The implementation resulted in a 54% usage rate and 66% revenue increase in the product</li>
+              <li>Owner and designer of Profile ID, a feature catered to resellers and regulators, adding the ability to customize settings on the fly and increase data submission accuracy on a per loan/audit basis</li>
+              <li>Gathering requirements, writing user stories, maintaining backlog, scheduling, bug triage in JIRA</li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">February 2016 - October 2019</span>
@@ -121,10 +188,12 @@
           <div class="resume-content">
             <h3 class="mb-0">QA Engineer</h3>
             <div class="subheading mb-3">ComplianceEase</div>
-            <p>•	Analyzed requirements specifications to design, develop test plans, created over 5000 test cases</p>
-            <p>•	Refactored Java automation scripts in a Selenium framework and databases to make the testing tools more scalable to accommodate complicated test suites</p>
-            <p>•	SQL queries in both MS SQL Server and Access</p>
-            <p>•	Performed functional, system, performance, load, and stress testing</p>
+            <ul class="resume-bullets">
+              <li>Analyzed requirements specifications to design, develop test plans, created over 5000 test cases</li>
+              <li>Refactored Java automation scripts in a Selenium framework and databases to make the testing tools more scalable to accommodate complicated test suites</li>
+              <li>SQL queries in both MS SQL Server and Access</li>
+              <li>Performed functional, system, performance, load, and stress testing</li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">September 2012 - July 2015</span>
@@ -132,6 +201,56 @@
         </div>
       </div>
 
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills &amp; Tools</h2>
+        <div>
+          <h3 class="h5 mb-2">Project &amp; Program Management</h3>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">PMO &amp; portfolio management</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Agile / Scrum (CSM)</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Backlog grooming &amp; intake</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Quarterly Business Reviews</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Stakeholder alignment</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Vendor license &amp; budget management</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Requirements &amp; user stories</li>
+          </ul>
+          <h3 class="h5 mb-2">Project Tools</h3>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Jira</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Asana</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Confluence</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Airtable</li>
+          </ul>
+          <h3 class="h5 mb-2">Data &amp; Analytics</h3>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Tableau</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Looker Studio</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Domo</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">SQL</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Python</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">KPI dashboards &amp; reporting</li>
+          </ul>
+          <h3 class="h5 mb-2">AI &amp; MarTech</h3>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Generative AI evaluation &amp; adoption</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Marketing technology (MarTech)</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Elasticsearch search migration</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Adobe Experience Manager (AEM)</li>
+          </ul>
+          <h3 class="h5 mb-2">QA &amp; Testing</h3>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Test planning</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Selenium</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Java</li>
+            <li class="list-inline-item border rounded-pill px-3 py-1 mb-2 text-dark">Functional, load &amp; performance testing</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <hr class="m-0">
@@ -152,22 +271,22 @@
             <li>Streaks, milestone badges and reminders that skip meals already logged.</li>
           </ul>
           <div class="row no-gutters mb-3">
-            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-scan.jpg" alt="CalSnap scan result with a per-ingredient breakdown" loading="lazy"></div>
-            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-today.jpg" alt="CalSnap home screen with calorie and macro rings" loading="lazy"></div>
-            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-streaks.jpg" alt="CalSnap progress screen with streak and calendar" loading="lazy"></div>
-            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-weight.jpg" alt="CalSnap weight trend chart" loading="lazy"></div>
+            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-scan.jpg" width="440" height="956" alt="CalSnap scan result with a per-ingredient breakdown" loading="lazy"></div>
+            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-today.jpg" width="440" height="956" alt="CalSnap home screen with calorie and macro rings" loading="lazy"></div>
+            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-streaks.jpg" width="440" height="956" alt="CalSnap progress screen with streak and calendar" loading="lazy"></div>
+            <div class="col-6 col-md-3 pr-2 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-weight.jpg" width="440" height="956" alt="CalSnap weight trend chart" loading="lazy"></div>
           </div>
           <p class="small text-muted">Screens use a seeded demo account and public-domain/CC0 sample meal photos.</p>
-          <a class="btn btn-primary btn-sm" href="https://github.com/petephan/CalTracker"><i class="fab fa-github"></i> View on GitHub</a>
+          <a class="btn btn-primary btn-sm" href="https://github.com/petephan/CalTracker"><i class="fab fa-github" aria-hidden="true"></i> View on GitHub</a>
         </div>
 
         <div class="resume-item mb-5">
           <h3 class="mb-0">LiquidNation</h3>
           <div class="subheading mb-3">Web storefront &middot; HTML, CSS, JavaScript, PHP &middot; SJSU class project</div>
           <p>An online storefront for a fictional bottled-water company, built for a web development course. It has a product catalog, shopping cart and checkout flow, team pages, a contact page and a feedback form.</p>
-          <a class="d-block mb-3" style="max-width: 32rem;" href="https://petephan.github.io/LiquidNation/"><img class="img-fluid rounded border" src="img/portfolio/liquidnation.jpg" alt="LiquidNation home page" loading="lazy"></a>
+          <a class="d-block mb-3" style="max-width: 32rem;" href="https://petephan.github.io/LiquidNation/"><img class="img-fluid rounded border" src="img/portfolio/liquidnation.jpg" width="958" height="540" alt="LiquidNation home page" loading="lazy"></a>
           <div>
-            <a class="btn btn-primary btn-sm" href="https://github.com/petephan/LiquidNation"><i class="fab fa-github"></i> View on GitHub</a>
+            <a class="btn btn-primary btn-sm" href="https://github.com/petephan/LiquidNation"><i class="fab fa-github" aria-hidden="true"></i> View on GitHub</a>
             <a class="btn btn-outline-primary btn-sm" href="https://petephan.github.io/LiquidNation/">Live demo</a>
           </div>
         </div>
@@ -181,7 +300,7 @@
           </ul>
         </div>
 
-        <a href="https://github.com/petephan">See all projects on GitHub <i class="fas fa-arrow-right"></i></a>
+        <a href="https://github.com/petephan">See all projects on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       </div>
     </section>
 
@@ -197,9 +316,6 @@
             <div class="subheading mb-3">Bachelor of Science</div>
             <div>Management Information Systems</div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"></span>
-          </div>
         </div>
 
       </div>
@@ -212,41 +328,41 @@
         <h2 class="mb-5">Awards &amp; Certifications</h2>
         <ul class="fa-ul mb-0">
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Certificate of Completion: Claude 101 - Anthropic - May 2026</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Introduction to Modern AI - Cisco Networking Academy - January 2025</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             AI Python for Beginners: Extending Python with Packages and APIs - DeepLearning.AI - October 2024</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Tableau 2024 A-Z: Hands-On Tableau Training for Data Science - Udemy - July 2024</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Confluence Fundamentals Badge - Atlassian - March 2024</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Jira Fundamentals Badge - Atlassian - December 2022</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             The Complete SQL Bootcamp 2021: Go from Zero to Hero - Udemy - January 2021</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Python for Data Science and Machine Learning Bootcamp - Udemy - August 2020</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Certified ScrumMaster (CSM) - Scrum Alliance - March 2016</li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text-warning" aria-hidden="true"></i>
             Certificate of Achievement in Accounting - Foothill-De Anza Community College District</li>
           </ul>
         
       </div>
     </section>
 
-  </div>
+  </main>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
