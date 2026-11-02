@@ -190,3 +190,25 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+@media (max-width: 575.98px) {
+  section.resume-section h2 {
+    font-size: 2.25rem;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section.resume-section h3,
+  section.resume-section .subheading {
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 359.98px) {
+  section.resume-section h1 {
+    font-size: 4.5rem;
+  }
+  section.resume-section .subheading {
+    font-size: 1.25rem;
+  }
+}
