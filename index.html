@@ -44,6 +44,9 @@
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
@@ -60,10 +63,10 @@
         <h1 class="mb-0">Peter
           <span class="text-primary">Phan</span>
         </h1>
-        <div class="subheading mb-5">San Jose, CA - 
+        <div class="subheading mb-5">Fremont, CA - 
           <a href="mailto:phanpeter43@gmail.com">phanpeter43@gmail.com</a>
         </div>
-        <p class="lead mb-5">Proven Business Analyst, PM, and QA | Helping Companies Translate Their Business Goals to Reality</p>
+        <p class="lead mb-5">Proven Project Manager, BA, and QA | Helping Companies Translate Their Business Goals to Reality</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/peterphan/">
             <i class="fab fa-linkedin-in"></i>
@@ -80,17 +83,18 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
-        
+
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Business Analyst/Project Manager</h3>
+            <h3 class="mb-0">Project Manager</h3>
             <div class="subheading mb-3">Cisco</div>
-            <p>•	Plan and manage the Marketing Tech Stack software and licensing move to the Cisco eStore</p>
-            <p>•	Cross functionally plan with the New Experiences PM & IT Teams, CDC IT Team and UI/UX teams in order to create a Social Feed on the Cisco.com Search site</p>
-            <p>•	Collaborate with localization team to ensure Search is optimized to perform well locally</p>
-            <p>•	Organize agenda, guest speakers and run Quarterly Business Review and Marketing Technology PMO meetings</p>
-            <p>•	Track and monitor monthly projects with our internal IT team using Rally to create workflows and quarterly priorities</p>
-            <p>•	Perform QA and offer alternate solutions to ensure timely delivery of objectives to multiple product marketing teams across regions</p>
+            <p>•	Project Manager for Marketing AI Office, Marketing Technology, and liaison for Cisco.com Search.</p>
+            <p>•	Spearhead the management of new Generative AI-driven marketing initiatives, establishing project proposals and pilot programs for executive review and approval.</p>
+            <p>•	Strategize and implement optimization techniques to enhance digital user journeys, improving audience relevance, engagement, and conversion rates to drive qualified leads and accelerate sales.</p>
+            <p>•	Oversee user story tracking via JIRA and monitor key performance metrics through Tableau, Google Looker Studio, and Domo.</p>
+            <p>•	Successfully migrated the Cisco.com Search platform to an Elasticsearch integration, incorporating Generative AI for enhanced query responses.</p>
+            <p>•	Manage the MarTech Project Management Office (PMO) portfolio, organizing Quarterly Business Reviews and regular meetings, including agenda setting and speaker coordination.</p>
+   <p>•	North Star Navigator Award 10/2022 – Recognition for being foundational to the success of Cisco.com Reimagined, the migration of Cisco.com from our legacy on-prem instance of AEM to a modern foundation on AEM 6.5 in the Cloud.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">October 2019 - Present</span>
@@ -141,6 +145,57 @@
         </div>
       </div>
 
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
+      <div class="w-100">
+        <h2 class="mb-5">Portfolio</h2>
+
+        <div class="resume-item mb-5">
+          <h3 class="mb-0">CalSnap</h3>
+          <div class="subheading mb-3">iOS &amp; Android app &middot; Expo, React Native, TypeScript, Supabase &middot; 2026</div>
+          <p><em>Vibe coded with Claude Code: I directed the product and Claude wrote the code, so it wasn't hand-coded.</em></p>
+          <p>Snap a photo of a meal and get calories and macros back in seconds. A vision model identifies each food, estimates portions and returns structured nutrition data, validated on the server and again in the app.</p>
+          <ul>
+            <li>Personalised daily targets from the Mifflin-St Jeor equation, with the reasoning shown to the user.</li>
+            <li>Supabase auth and Postgres with row-level security, plus an offline-first copy that retries failed saves.</li>
+            <li>The AI key never ships in the app: the analysis server requires sign-in, rate-limits scans and validates uploads by file signature.</li>
+            <li>Streaks, milestone badges and reminders that skip meals already logged.</li>
+          </ul>
+          <div class="row mb-3">
+            <div class="col-6 col-md-3 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-scan.jpg" alt="CalSnap scan result with a per-ingredient breakdown" loading="lazy"></div>
+            <div class="col-6 col-md-3 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-today.jpg" alt="CalSnap home screen with calorie and macro rings" loading="lazy"></div>
+            <div class="col-6 col-md-3 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-streaks.jpg" alt="CalSnap progress screen with streak and calendar" loading="lazy"></div>
+            <div class="col-6 col-md-3 mb-3"><img class="img-fluid rounded border" src="img/portfolio/calsnap-weight.jpg" alt="CalSnap weight trend chart" loading="lazy"></div>
+          </div>
+          <p class="small text-muted">Screens use a seeded demo account and public-domain/CC0 sample meal photos.</p>
+          <a class="btn btn-primary btn-sm" href="https://github.com/petephan/CalTracker"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+
+        <div class="resume-item mb-5">
+          <h3 class="mb-0">LiquidNation</h3>
+          <div class="subheading mb-3">Web storefront &middot; HTML, CSS, JavaScript, PHP &middot; SJSU class project, 2019</div>
+          <p>An online storefront for a fictional bottled-water company, built for a web development course. It has a product catalog, shopping cart and checkout flow, team pages, a contact page and a feedback form.</p>
+          <a href="https://petephan.github.io/LiquidNation/"><img class="img-fluid rounded border mb-3" style="max-width: 32rem;" src="img/portfolio/liquidnation.jpg" alt="LiquidNation home page" loading="lazy"></a>
+          <div>
+            <a class="btn btn-primary btn-sm" href="https://github.com/petephan/LiquidNation"><i class="fab fa-github"></i> View on GitHub</a>
+            <a class="btn btn-outline-primary btn-sm" href="https://petephan.github.io/LiquidNation/">Live demo</a>
+          </div>
+        </div>
+
+        <div class="resume-item mb-5">
+          <h3 class="mb-0">Coursework</h3>
+          <div class="subheading mb-3">Java &amp; web development</div>
+          <ul class="mb-3">
+            <li><a href="https://github.com/petephan/JAVAClass">JAVAClass</a>: Java homework and chapter examples.</li>
+            <li><a href="https://github.com/petephan/Complete2020WebDevBootcamp">Complete 2020 Web Development Bootcamp</a>: exercises and projects from the online course.</li>
+          </ul>
+        </div>
+
+        <a href="https://github.com/petephan">See all projects on GitHub <i class="fas fa-arrow-right"></i></a>
+      </div>
     </section>
 
     <hr class="m-0">
